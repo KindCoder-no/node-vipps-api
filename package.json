@@ -1,0 +1,22 @@
+{
+  "name": "vipps-api",
+  "version": "1.0.0",
+  "description": "Node.JS package to easy integrate with Vipps API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KindCoder-no/node-vipps-api.git"
+  },
+  "keywords": [
+    "Vipps"
+  ],
+  "author": "Emre Sanden (KindCoder-no)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KindCoder-no/node-vipps-api/issues"
+  },
+  "homepage": "https://github.com/KindCoder-no/node-vipps-api#readme"
+}
