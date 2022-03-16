@@ -8,6 +8,9 @@ const capture = require('./lib/capture')
 const refund = require('./lib/refund')
 const getAccessToken = require('./lib/access-token')
 const getOrderDetails = require('./lib/order-details')
+const createAgreement = require('./lib/createAgreement')
+const updateOrder = require('./lib/updateOrder')
+const getAgreement = require('./lib/getAgreement')
 
 
 
@@ -71,4 +74,16 @@ module.exports = class VippsClient {
     getOrderDetails ({ orderId }) {
       return getOrderDetails({ client: this, orderId })
     }
-  }
+    // Create Agreement
+    createAgreement ({ order }) {
+        return getOrderDetails({ client: this, order })
+    }
+    // Get Agreement
+    getAgreement ({ orderId }) {
+        return getOrderDetails({ client: this, orderId })
+    }
+    // Update Agreement
+    updateAgreement ({ orderId, body }) {
+      return updateOrder({ client: this, orderId, body })
+    }
+}
