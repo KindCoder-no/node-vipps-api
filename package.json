@@ -1,6 +1,6 @@
 {
   "name": "vipps-api",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Node.JS package to easy integrate with Vipps API",
   "main": "index.js",
   "scripts": {
