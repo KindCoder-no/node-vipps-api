@@ -4,6 +4,7 @@ A simple package to use the Vipps API
 You can view the required body models documented in Vipps swagger documentation
 
 [Ecom Documentation](https://vippsas.github.io/vipps-ecom-api/)
+
 [Recurring Documentation](https://vippsas.github.io/vipps-recurring-api/)
 
 This is an updated version of [CrystallizeAPI/node-vipps](https://github.com/CrystallizeAPI/node-vipps)
@@ -18,6 +19,8 @@ npm install vipps-api
 ### Initiate the client
 
 ```
+const VippsClient = require('vipps-api')
+
 const client = new VippsClient({
     id: "MY_VIPPS_CLIENT_ID",
     secret: "MY_VIPPS_CLIENT_SECRET",
@@ -53,19 +56,19 @@ await client.getOrderDetails({ orderId: VippsOrderId});
 ### Create Recurring Agreement
 
 ```
-await client.createAgreement({ body: VippsRefundBodyModel});
+await client.createAgreement({ order: VippsAgreementModel});
 ```
 
 ### Get Recurring Agreement details
 
 ```
-await client.getAgreement({ orderId: VippsOrderId });
+await client.getAgreement({ agreementId: VippsAgreementId });
 ```
 
 ### Update Recurring Agreement
 
 ```
-await client.updateAgreement({ orderId: VippsOrderId, body: VippsRefundBodyModel});
+await client.updateAgreement({ agreementId: VippsAgreementId, body: VippsAgreementModel});
 ```
 
 ### Get an access token
@@ -73,3 +76,7 @@ await client.updateAgreement({ orderId: VippsOrderId, body: VippsRefundBodyModel
 ```
 await client.getAccessToken();
 ```
+
+
+## Todo:
+- Update Recurring to V3
