@@ -39,7 +39,7 @@ module.exports = class VippsClient {
           headers: {
             'Content-Type': 'application/json',
             'Ocp-Apim-Subscription-Key': this.config.subscriptionId,
-            Authorization: `Bearer ${access_token}`
+            'Authorization': `Bearer ${access_token}`
           },
           method,
           body: JSON.stringify(body)
