@@ -1,6 +1,6 @@
 {
   "name": "vipps-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.JS package to easy integrate with Vipps API",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   "homepage": "https://github.com/KindCoder-no/node-vipps-api#readme",
   "dependencies": {
     "cross-fetch": "^3.1.5",
-    "ow": "^0.28.1"
+    "ow": "^0.17.0"
   }
 }
