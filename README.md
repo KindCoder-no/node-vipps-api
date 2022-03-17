@@ -80,3 +80,4 @@ await client.getAccessToken();
 
 ## Todo:
 - Update Recurring to V3
+- Vipps Login
