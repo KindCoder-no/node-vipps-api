@@ -9,7 +9,7 @@ const refund = require('./lib/refund')
 const getAccessToken = require('./lib/access-token')
 const getOrderDetails = require('./lib/order-details')
 const createAgreement = require('./lib/createAgreement')
-const updateAgreement = require('./lib/updateOrder')
+const updateAgreement = require('./lib/updateAgreement')
 const getAgreement = require('./lib/getAgreement')
 
 
