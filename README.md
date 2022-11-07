@@ -18,7 +18,7 @@ npm install vipps-api
 
 ### Initiate the client
 
-```
+```javascript
 const VippsClient = require('vipps-api')
 
 const client = new VippsClient({
@@ -31,53 +31,52 @@ const client = new VippsClient({
 
 ### Initiate a payment<br/>
 
-```
+```javascript
 await client.initiatePayment({order:VippsCheckoutModel});
 ```
 
 ### Capture a payment<br/>
 
-```
+```javascript
 await client.capture({ orderId: VippsOrderId, body: VippsCaptureBodyModel });
 ```
 
 ### Refund a payment<br/>
 
-```
+```javascript
 await client.refund({ orderId: VippsOrderId, body: VippsRefundBodyModel });
 ```
 
 ### Get order payment details<br/>
 
-```
+```javascript
 await client.getOrderDetails({ orderId: VippsOrderId});
 ```
 
 ### Create Recurring Agreement
 
-```
+```javascript
 await client.createAgreement({ order: VippsAgreementModel});
 ```
 
 ### Get Recurring Agreement details
 
-```
+```javascript
 await client.getAgreement({ agreementId: VippsAgreementId });
 ```
 
 ### Update Recurring Agreement
 
-```
+```javascript
 await client.updateAgreement({ agreementId: VippsAgreementId, body: VippsAgreementModel});
 ```
 
 ### Get an access token
 
-```
+```javascript
 await client.getAccessToken();
 ```
 
 
 ## Todo:
-- Update Recurring to V3
-- Vipps Login
+- [ ] Vipps Login
