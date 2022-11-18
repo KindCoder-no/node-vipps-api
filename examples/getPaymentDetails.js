@@ -3,9 +3,9 @@ const VippsClient = require('vipps-api')
 
 // Create Vipps Client
 const client = new VippsClient({
-    id: "49468c5d-ecf9-4c0b-b4e1-1191ef56ab94",
-    secret: "11rWOChOGDHKMINvu2HhCTjNqGA=",
-    subscriptionId: "c6390f7de9d04b7baa02dccc162bd6f8",
+    id: CLIENT_ID,
+    secret: CLIENT_SECRET,
+    subscriptionId: CLIEN_SUBSCRIPTION_KEY,
     // Run in Test (https://apitest.vipps.no)
     testDrive: true
 });
