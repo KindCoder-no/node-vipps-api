@@ -1,3 +1,6 @@
+# THIS IS OUTDATED
+The Vipps api has changed, a new version of this package may come later (Pull Requests are welcome)
+
 # node-vipps-api
 A simple package to use the Vipps API
 
